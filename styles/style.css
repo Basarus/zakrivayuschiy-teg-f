@@ -487,3 +487,7 @@
     min-width: 341px;
   }
 }
+
+@supports (-webkit-text-stroke: 1px black) or (text-stroke: 1px black) {
+  
+}
