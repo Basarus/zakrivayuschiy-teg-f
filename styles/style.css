@@ -84,7 +84,7 @@
   transition: all 0.3s ease;
 }
 
-.theme-menu__button:focus::after{
+.theme-menu__button:focus::after {
   width: 100%;
 }
 
@@ -387,7 +387,7 @@
   font-weight: 400;
 }
 
-.dialog-row > img {
+.dialog-row>img {
   content: var(--floppy-image);
   width: 35px;
   height: 35px;
@@ -487,7 +487,7 @@
     margin-block-end: 8px;
   }
 
-  .dialog-body{
+  .dialog-body {
     min-width: 341px;
   }
 }

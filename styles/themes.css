@@ -5,11 +5,11 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-.theme-dark { 
+.theme-dark {
     background-image: url('/images/background-dark.png');
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;      
+    background-position: center;
 }
 
 .theme-light {
@@ -31,7 +31,7 @@
         --main-border-color: #00CC14;
         --main-font-family: 'PressStart2P-Regular', 'monospace';
         --sub-font-family: 'Inter-Variable', 'monospace';
-    } 
+    }
 }
 
 @media (prefers-color-scheme: dark) {
