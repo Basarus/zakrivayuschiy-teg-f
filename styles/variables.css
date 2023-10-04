@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
-:root.theme-dark{
+:root.theme-dark {
     --main-background-color: #000000;
     --main-text-color: #00CC14;
     --main-border-color: #00CC14;
@@ -11,10 +11,9 @@
     --heart-main-body-color: #FF0000;
     --heart-sparks-color: #FF0000;
     --floppy-image: url('../images/floppy-dark.png')
-
 }
 
-:root.theme-light{
+:root.theme-light {
     --main-background-color: #FFFFFF;
     --main-text-color: #000000;
     --main-border-color: #000000;
