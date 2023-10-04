@@ -215,6 +215,7 @@
   overflow: hidden;
   align-self: end;
   cursor: pointer;
+  font-family: var(--main-font-family);
 }
 
 .card__like-button:focus {
