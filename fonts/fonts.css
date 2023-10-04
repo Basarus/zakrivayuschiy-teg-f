@@ -9,6 +9,15 @@
 }
 
 @font-face {
+  font-family: 'Inter-Variable';
+  src: url(./Inter-Variable.woff2) format('woff2-variations'), url(./Inter-Variable.woff2) format('woff2-supports-variations'), url(./Inter-Variable.woff2) format('woff2');
+  font-weight: 785;
+  font-display: swap;
+  font-variation-settings: 'wght' 400, "wdth" 785, 'slnt' 0;
+}
+
+
+@font-face {
   font-family: 'PressStart2P-Regular';
   src: url(./PressStart2P-Regular.woff);
   font-weight: 785;
