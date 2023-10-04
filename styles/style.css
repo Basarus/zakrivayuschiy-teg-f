@@ -56,6 +56,7 @@
   position: relative;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .theme-menu__list {
@@ -81,7 +82,7 @@
   height: 2px;
   background-color: var(--main-text-color);
   transform: scaleX(1);
-  transition: all 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .theme-menu__button:focus::after {
@@ -91,10 +92,6 @@
 .theme-menu__button:focus {
   outline: none;
 }
-
-/* .theme-menu__button:not(:focus-visible)::after {
-  transform: scaleX(0);
-} */
 
 .theme-menu__button:disabled {
   pointer-events: none;
@@ -148,7 +145,6 @@
   gap: 27px;
   padding: 0px 25px 0px 25px;
   font-size: 18px;
-  line-height: 21px;
   font-weight: 400;
   font-family: var(--sub-font-family);
   margin-block-end: 25px;
@@ -166,10 +162,6 @@
 .card-list__item-image {
   width: 100%;
   object-fit: cover;
-}
-
-.card__like-button {
-  align-self: end;
 }
 
 .card-list__item:nth-child(2)>.card-list__item-container-image>.card-list__item-image {
@@ -216,6 +208,8 @@
   height: 100%;
   max-height: 39px;
   overflow: hidden;
+  align-self: end;
+  cursor: pointer;
 }
 
 .card__like-button:focus {
@@ -309,6 +303,7 @@
   width: 27px;
   height: 24px;
   margin-inline-end: 12px;
+  cursor: pointer;
 }
 
 .like-icon__heart {
@@ -399,6 +394,7 @@
   border: 2px solid var(--main-border-color);
   width: 100%;
   padding: 9px 17px 9px 17px;
+  cursor: pointer;
 }
 
 .save-button {
@@ -419,6 +415,7 @@
   font-family: var(--main-font-family);
   font-weight: 400;
   line-height: 12.6px;
+  cursor: pointer;
 }
 
 .save-button-img {

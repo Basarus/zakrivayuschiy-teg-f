@@ -10,7 +10,7 @@
     --heart-contour-color: #00CC14;
     --heart-main-body-color: #FF0000;
     --heart-sparks-color: #FF0000;
-    --floppy-image: url('../images/floppy-dark.png')
+    --floppy-image: url('../images/floppy-dark.png');
 }
 
 :root.theme-light {
@@ -23,5 +23,5 @@
     --heart-contour-color: #000000;
     --heart-main-body-color: #FF0000;
     --heart-sparks-color: #FF0000;
-    --floppy-image: url('../images/floppy-light.png')
+    --floppy-image: url('../images/floppy-light.png');
 }
