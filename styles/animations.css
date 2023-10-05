@@ -48,3 +48,61 @@
         opacity: 1;
     }
 }
+
+.theme-menu__button:hover,
+.theme-menu__button:disabled {
+    transition: opacity 0.3s ease;
+}
+
+.theme-menu__button::after {
+    transition: width 0.3s ease;
+}
+
+
+.card__like-button:focus-visible {
+    transition: box-shadow 0.3s ease;
+}
+
+.card__like-button:hover::before {
+    transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button::before {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.like-icon__main-core {
+    transition: fill 0.3s linear;
+}
+
+.like-icon__main-body {
+    transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon__main-counter {
+    transition: fill 0.3s 0.06 linear;
+}
+
+.dialog-row-button:hover::before {
+    transition: transform 0.5s ease-in-out;
+}
+
+.dialog-row-button::before {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.dialog-row-button:focus-visible {
+    transition: box-shadow 0.3s ease;
+}
+
+.save-button:focus-visible {
+    transition: box-shadow 0.3s ease;
+}
+
+.save-button:hover::before {
+    transition: transform 0.5s ease-in-out;
+}
+
+.save-button::before {
+    transition: background-color 0.5s ease-in-out;
+}

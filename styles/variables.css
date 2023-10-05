@@ -25,3 +25,33 @@
     --heart-sparks-color: #FF0000;
     --floppy-image: url('../images/floppy-light.png');
 }
+
+@media (prefers-color-scheme: light) {
+    :root.theme-auto {
+        --main-background-color: #FFFFFF;
+        --main-text-color: #000000;
+        --main-border-color: #000000;
+        --main-font-family: 'PressStart2P-Regular', 'monospace';
+        --sub-font-family: 'Inter-Variable', 'monospace';
+        --heart-core-color: #FFFFFF;
+        --heart-contour-color: #000000;
+        --heart-main-body-color: #FF0000;
+        --heart-sparks-color: #FF0000;
+        --floppy-image: url('../images/floppy-light.png');
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root.theme-auto {
+        --main-background-color: #000000;
+        --main-text-color: #00CC14;
+        --main-border-color: #00CC14;
+        --main-font-family: 'PressStart2P-Regular', 'monospace';
+        --sub-font-family: 'Inter-Variable', 'monospace';
+        --heart-core-color: #FFFFFF;
+        --heart-contour-color: #00CC14;
+        --heart-main-body-color: #FF0000;
+        --heart-sparks-color: #FF0000;
+        --floppy-image: url('../images/floppy-dark.png');
+    }
+}

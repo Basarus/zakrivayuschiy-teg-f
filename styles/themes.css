@@ -47,4 +47,7 @@
         --sub-font-family: 'Inter-Variable', 'monospace';
     }
 
+    .card-list__item-container-label {
+        color: var(--main-text-color)
+    }
 }

@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" href="./images/favicon.ico" sizes="16x16">
+  <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./images/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="dark light" />
   <title>Закрывающий тег</title>
-  <link rel="icon" href="./svg/favicon.svg">
   <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="./styles/variables.css" />
   <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/animations.css" />
   <link rel="stylesheet" href="./styles/themes.css" />
@@ -18,8 +20,8 @@
 
 <body class="page">
   <header class="header">
-    <h1 class="header-title">&lt;/HTML&gt;</h1>
-    <p class="header-description">ЗАКРЫВАЮЩИй ТЕГ</p>
+    <a class="header-title">&lt;/HTML&gt;</a>
+    <h1 class="header-description">ЗАКРЫВАЮЩИй ТЕГ</h1>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
       <ul class="theme-menu__list">
@@ -46,6 +48,7 @@
       <article class="card-list__item">
         <h2 class="card-list__item-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">&lt;/HTML&gt;</span>
           <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
@@ -79,6 +82,7 @@
       <article class="card-list__item">
         <h2 class="card-list__item-title">1 спринт: Я — чистый лист</h2>
         <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">&lt;/HTML&gt;</span>
           <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
@@ -114,6 +118,7 @@
       <article class="card-list__item">
         <h2 class="card-list__item-title">1 спринт: А если не получится?</h2>
         <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">&lt;css&gt;</span>
           <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
@@ -147,6 +152,7 @@
       <article class="card-list__item">
         <h2 class="card-list__item-title">2 спринт: Погоня за идеалом</h2>
         <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">&lt;desigions&gt;</span>
           <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
@@ -181,6 +187,7 @@
       <article class="card-list__item">
         <h2 class="card-list__item-title">2 спринт: О тех, кто рядом</h2>
         <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">care</span>
           <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
@@ -216,6 +223,7 @@
       <article class="card-list__item">
         <h2 class="card-list__item-title">3 спринт: Обходные стратегии</h2>
         <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">&lt;support&gt;</span>
           <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
@@ -249,6 +257,7 @@
       <article class="card-list__item">
         <h2 class="card-list__item-title">3 спринт: Когда опускаются руки</h2>
         <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">&lt;lifes-style: none;&gt;</span>
           <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
@@ -282,8 +291,9 @@
       </article>
       <article class="card-list__item">
         <h2 class="card-list__item-title">«Сейчас я здесь»</h2>
-        <div class="card-list__item-container-image"><img loading="lazy" alt="Описание изображения"
-            class="card-list__item-image" src="./images/article-image.png">
+        <div class="card-list__item-container-image">
+          <span class="card-list__item-container-label">&lt;experience&gt;</span>
+          <img loading="lazy" alt="Описание изображения" class="card-list__item-image" src="./images/article-image.png">
         </div>
         <div class="card-list__item-description">
           <p>Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала
@@ -317,22 +327,29 @@
       </article>
     </div>
   </main>
-  <button class="save-button" type="button" onclick="window['modal'].show()" aria-controls="modal">
-    <img class="save-button-img" loading="lazy" alt="Описание изображения" src="./images/floppy-light.png" />
-    Сохранить на память
-  </button>
+  <footer>
+    <button class="save-button" type="button" onclick="window['modal'].show()" aria-controls="modal">
+      <svg>
+        <use href="svg/floppy.svg#floppy">
+      </svg>
+      Сохранить на память
+    </button>
+  </footer>
 
   <dialog id="modal">
-    <div class="dialog-background"></div>
     <div class="dialog-body">
       <div class="dialog-row">
-        <img loading="lazy" alt="Описание изображения" src="./images/floppy-light.png"/>
+        <svg class="dialog-row-image">
+          <use href="svg/floppy.svg#floppy">
+        </svg>
         <h2 class="dialog-row-text">Вставьте
           дискету, чтобы продолжить</h2>
       </div>
 
       <div class="dialog-row">
-        <button onclick="window['modal'].close()" class="dialog-row-button">ОК</button>
+        <form method="dialog">
+          <button class="dialog-row-button">ОК</button>
+        </form>
       </div>
     </div>
   </dialog>
