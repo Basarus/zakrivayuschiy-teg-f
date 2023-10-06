@@ -26,6 +26,10 @@
     --floppy-image: url('../images/floppy-light.png');
 }
 
+::backdrop {
+    --color-backdrop: rgba(0, 0, 0, 0.7);
+}
+
 @media (prefers-color-scheme: light) {
     :root.theme-auto {
         --main-background-color: #FFFFFF;
