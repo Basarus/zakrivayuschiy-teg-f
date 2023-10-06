@@ -106,3 +106,44 @@
 .save-button::before {
     transition: background-color 0.5s ease-in-out;
 }
+
+.like-icon:hover .like-icon__main-core {
+    fill: var(--heart-contour-color);
+}
+
+.like-icon:hover .like-icon__main-body {
+    fill: var(--heart-contour-color);
+}
+
+.like-icon:active .like-icon__main-core {
+    fill: var(--heart-main-body-color);
+}
+
+.like-icon:active .like-icon__main-body {
+    fill: var(--heart-main-body-color);
+}
+
+.like-icon.is-liked .like-icon__main-core {
+    fill: var(--heart-main-body-color);
+}
+
+.like-icon.is-liked .like-icon__main-body {
+    fill: var(--heart-main-body-color);
+}
+
+.like-icon.is-liked .like-icon__main-counter {
+    fill: var(--heart-main-body-color);
+}
+
+.like-icon.is-liked .like-icon__sparks {
+    animation: sparkAnimation 0.3s ease-in 0.3s 1;
+}
+
+.like-icon.is-liked .like-icon__heart {
+    animation: scaleHeart 0.3s ease-in 0.1s 1;
+}
+
+.like-icon__sparks {
+    fill: var(--heart-sparks-color);
+    opacity: 0;
+}

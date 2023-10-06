@@ -91,16 +91,16 @@
   width: 0%;
   height: 2px;
   background-color: var(--main-text-color);
-  transform: scaleX(1);
+  transform: scaleX(0);
 }
 
 .theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
   width: 100%;
-  outline: none;
   opacity: 0.6;
 }
 
-.theme-menu__button:focus-visible {
+.theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
 }
@@ -259,7 +259,7 @@
   font-size: 14px;
 }
 
-.card__like-button:focus-visible {
+.card__like-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 #000;
 }
@@ -315,34 +315,6 @@
   height: 100%;
 }
 
-.like-icon:hover .like-icon__main-core {
-  fill: var(--heart-contour-color);
-}
-
-.like-icon:hover .like-icon__main-body {
-  fill: var(--heart-contour-color);
-}
-
-.like-icon:active .like-icon__main-core {
-  fill: var(--heart-main-body-color);
-}
-
-.like-icon:active .like-icon__main-body {
-  fill: var(--heart-main-body-color);
-}
-
-.like-icon.is-liked .like-icon__main-core {
-  fill: var(--heart-main-body-color);
-}
-
-.like-icon.is-liked .like-icon__main-body {
-  fill: var(--heart-main-body-color);
-}
-
-.like-icon.is-liked .like-icon__main-counter {
-  fill: var(--heart-main-body-color);
-}
-
 .card__icon-button {
   border: none;
   background: none;
@@ -358,28 +330,19 @@
   padding: 0;
 }
 
-.card__icon-button:focus-visible {
+.card__icon-button:focus {
   outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--main-border-color);
 }
 
 .like-icon__heart {
   transform-origin: 50%;
 }
 
-.like-icon.is-liked .like-icon__heart {
-  animation: scaleHeart 0.3s ease-in 0.1s 1;
-}
-
-.like-icon__sparks {
-  fill: var(--heart-sparks-color);
-  opacity: 0;
-}
-
-.like-icon.is-liked .like-icon__sparks {
-  animation: sparkAnimation 0.3s ease-in 0.3s 1;
-}
-
-dialog {
+#dialog {
   display: none;
   padding: 0px 17px;
   position: fixed;
@@ -390,13 +353,16 @@ dialog {
   justify-content: center;
   align-items: center;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
-dialog[open] {
+#dialog[open] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#dialog[open] {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .dialog-body {
@@ -477,7 +443,7 @@ dialog[open] {
   color: var(--main-background-color)
 }
 
-.dialog-row-button:focus-visible {
+.dialog-row-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 #000;
 }
@@ -509,7 +475,7 @@ dialog[open] {
   gap: 8px;
 }
 
-.save-button:focus-visible {
+.save-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 #000;
 }
@@ -571,13 +537,19 @@ footer {
     flex-direction: column;
     max-width: 306px;
     width: 100%;
-    max-height: 84px;
+    max-height: 80px;
     height: 100%;
+    padding-bottom: 20px;
   }
 
   .save-button-img {
     width: 28px;
     height: 28px;
     margin-block-end: 8px;
+  }
+
+  .card-list__item-container-label {
+    top: 25px;
+    right: 11px;
   }
 }
